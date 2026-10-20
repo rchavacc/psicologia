@@ -1,0 +1,27 @@
+SITIO WEB MULTIPÁGINA - RUTH CHAVAC | PSICOLOGÍA Y BIENESTAR
+
+PÁGINAS
+- index.html: Inicio
+- sobre-mi.html: Sobre mí
+- servicios.html: Mis servicios
+- agendar.html: Formulario de solicitud de cita
+- ubicacion.html: Ubicación editable
+- contacto.html: Contacto editable
+
+CARPETAS
+- css/styles.css: diseño y paleta basada en el logo.
+- js/script.js: menú móvil, validación y comportamiento del formulario.
+- assets/logo-ruth-chavac.jpg: logo proporcionado.
+
+CÓMO ABRIR
+1. Extrae el archivo ZIP.
+2. Abre index.html en Chrome, Edge o Firefox.
+3. Para editar el proyecto, abre la carpeta en Sublime Text o Visual Studio Code.
+
+ANTES DE PUBLICAR
+- Completa la dirección, mapa, horario, teléfono/WhatsApp y correo.
+- Reemplaza la biografía de ejemplo por credenciales y experiencia reales.
+- Confirma que los servicios ofrecidos correspondan a la práctica real.
+- El formulario de citas es una demostración: guarda los datos localmente en el navegador y NO los envía a la clínica. Para recibir solicitudes reales, debe conectarse a un servidor o proveedor de formularios seguro.
+- Evita solicitar información clínica sensible en formularios públicos y publica una política de privacidad apropiada.
+- La web no ofrece atención de emergencia.

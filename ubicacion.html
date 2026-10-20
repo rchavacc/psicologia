@@ -1,0 +1,393 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Encuentra la ubicación del consultorio de Ruth Chavac."
+    >
+
+    <title>Ubicación | Ruth Chavac</title>
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Estilos y JavaScript -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+    <!-- Estilos del mapa -->
+    <style>
+        .map-container {
+            width: 100%;
+            min-height: 420px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            border: 1px solid #eaddec;
+            background-color: #f5edf7;
+        }
+
+        .map-container iframe {
+            display: block;
+            width: 100%;
+            height: 420px;
+            border: 0;
+        }
+
+        .map-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .map-description {
+            color: #756b79;
+            font-size: 13px;
+            line-height: 1.8;
+            margin-top: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .map-container {
+                min-height: 330px;
+            }
+
+            .map-container iframe {
+                height: 330px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ==================== BARRA SUPERIOR ==================== -->
+    <div class="topbar">
+        <div class="container topbar-inner">
+
+            <span>
+                Un espacio para ti, tu bienestar y tu crecimiento
+            </span>
+
+            <a href="contacto.html">
+                Solicitar información
+                <span aria-hidden="true">↗</span>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- ==================== ENCABEZADO ==================== -->
+    <header class="header">
+        <div class="container nav-wrap">
+
+            <!-- Logotipo -->
+            <a
+                class="brand"
+                href="index.html"
+                aria-label="Ruth Chavac, inicio"
+            >
+                <img
+                    src="logo-ruth-chavac.jpg"
+                    alt="Logotipo de Ruth Chavac"
+                >
+
+                <span>
+                    <strong>Ruth Chavac</strong>
+                    <small>PSICOLOGÍA Y BIENESTAR</small>
+                </span>
+            </a>
+
+            <!-- Menú para dispositivos móviles -->
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+            <!-- Navegación -->
+            <nav class="nav" id="mainNav">
+
+                <a href="index.html">Inicio</a>
+
+                <a href="sobre-mi.html">Sobre mí</a>
+
+                <a href="servicios.html">Mis servicios</a>
+
+                <a href="agendar.html">Agendar cita</a>
+
+                <a href="ubicacion.html" class="active">
+                    Ubicación
+                </a>
+
+                <a href="contacto.html">Contacto</a>
+
+                <a class="btn btn-small" href="agendar.html">
+                    Solicitar cita <span>↗</span>
+                </a>
+
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== CONTENIDO PRINCIPAL ==================== -->
+    <main>
+
+        <!-- Presentación -->
+        <section class="page-hero">
+            <div class="container">
+
+                <p class="eyebrow">
+                    <span class="eyebrow-line"></span>
+                    UBICACIÓN
+                </p>
+
+                <h1>
+                    Encuentra tu espacio de
+                    <em>bienestar.</em>
+                </h1>
+
+                <p>
+                    Consulta nuestra ubicación en el mapa y encuentra
+                    la ruta para llegar al consultorio.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- ==================== UBICACIÓN Y MAPA ==================== -->
+        <section class="section location-section">
+
+            <div class="container location-grid">
+
+                <!-- Información del consultorio -->
+                <div class="location-copy">
+
+                    <p class="eyebrow">
+                        <span class="eyebrow-line"></span>
+                        VISÍTANOS
+                    </p>
+
+                    <h2>
+                        Un espacio para
+                        <br>
+                        <em>sentirte en confianza.</em>
+                    </h2>
+
+                    <p>
+                        Aquí puedes consultar la ubicación del consultorio
+                        y utilizar Google Maps para planificar tu visita.
+                    </p>
+
+                    <!-- Dirección -->
+                    <div class="location-detail">
+
+                        <span class="detail-icon">⌖</span>
+
+                        <div>
+                            <strong>Ubicación del consultorio</strong>
+
+                            <small>
+                                Coordenadas: 14.677958, -90.484221
+                            </small>
+                        </div>
+
+                    </div>
+
+                    <!-- Horario -->
+                    <div class="location-detail">
+
+                        <span class="detail-icon">◷</span>
+
+                        <div>
+                            <strong>Horario de atención</strong>
+
+                            <small>
+                                Consulta disponibilidad al solicitar tu cita.
+                            </small>
+                        </div>
+
+                    </div>
+
+                    <!-- Contacto -->
+                    <div class="location-detail">
+
+                        <span class="detail-icon">☎</span>
+
+                        <div>
+                            <strong>Consultas y citas</strong>
+
+                            <small>
+                                Contacta a la clínica para más información.
+                            </small>
+                        </div>
+
+                    </div>
+
+                    <!-- Botones -->
+                    <div class="map-actions">
+
+                        <a
+                            class="btn"
+                            href="https://www.google.com/maps/dir/?api=1&destination=14.677958%2C-90.484221"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Cómo llegar <span>↗</span>
+                        </a>
+
+                        <a
+                            class="text-link"
+                            href="contacto.html"
+                        >
+                            Ver contacto <span>→</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- ==================== MAPA INTERACTIVO ==================== -->
+                <div>
+
+                    <div class="map-container">
+
+                        <iframe
+                            src="https://maps.google.com/maps?q=14.677958%2C-90.484221&t=m&z=17&output=embed"
+                            title="Mapa de ubicación del consultorio de Ruth Chavac"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen
+                        ></iframe>
+
+                    </div>
+
+                  
+
+                </div>
+                <!-- ==================== FIN DEL MAPA ==================== -->
+
+            </div>
+        </section>
+
+        <!-- ==================== INFORMACIÓN PARA VISITANTES ==================== -->
+        <section class="section">
+
+            <div class="container split-feature">
+
+                <div>
+
+                    <p class="eyebrow">
+                        <span class="eyebrow-line"></span>
+                        ANTES DE VISITARNOS
+                    </p>
+
+                    <h2>
+                        Confirma tu cita
+                        <br>
+                        <em>antes de acudir.</em>
+                    </h2>
+
+                </div>
+
+                <div>
+
+                    <p>
+                        Te recomendamos solicitar una cita antes de acudir
+                        al consultorio para confirmar la disponibilidad
+                        y recibir cualquier indicación necesaria.
+                    </p>
+
+                    <a class="text-link" href="agendar.html">
+                        Solicitar una cita <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== PIE DE PÁGINA ==================== -->
+    <footer class="footer">
+
+        <div class="container footer-main">
+
+            <!-- Logotipo -->
+            <a class="brand footer-brand" href="index.html">
+
+                <img
+                    src="logo-ruth-chavac.jpg"
+                    alt="Logotipo de Ruth Chavac"
+                >
+
+                <span>
+                    <strong>Ruth Chavac</strong>
+                    <small>PSICOLOGÍA Y BIENESTAR</small>
+                </span>
+
+            </a>
+
+            <p>
+                Un espacio de escucha, cuidado y crecimiento personal.
+            </p>
+
+            <!-- Enlaces -->
+            <div class="footer-links">
+
+                <a href="servicios.html">Servicios</a>
+
+                <a href="agendar.html">Agendar cita</a>
+
+                <a href="ubicacion.html">Ubicación</a>
+
+                <a href="contacto.html">Contacto</a>
+
+            </div>
+
+        </div>
+
+        <!-- Derechos reservados -->
+        <div class="container footer-bottom">
+
+            <span>
+                © <span id="year"></span>
+                Ruth Chavac. Todos los derechos reservados.
+            </span>
+
+            <span>
+                La información es orientativa y no sustituye
+                atención de emergencia.
+            </span>
+
+        </div>
+
+    </footer>
+
+    <!-- Botón para volver arriba -->
+    <button
+        id="backToTop"
+        class="back-to-top"
+        aria-label="Volver arriba"
+    >
+        ↑
+    </button>
+
+</body>
+</html>

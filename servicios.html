@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Descripción de la página -->
+    <meta
+        name="description"
+        content="Servicios de ejemplo de psicología y bienestar emocional."
+    >
+
+    <title>Mis servicios | Ruth Chavac</title>
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Estilos y JavaScript -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Barra superior -->
+    <div class="topbar">
+        <div class="container topbar-inner">
+
+            <span>
+                Un espacio para ti, tu bienestar y tu crecimiento
+            </span>
+
+            <a href="contacto.html">
+                Solicitar información
+                <span aria-hidden="true">↗</span>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Encabezado y menú de navegación -->
+    <header class="header">
+        <div class="container nav-wrap">
+
+            <!-- Logotipo y nombre -->
+            <a
+                class="brand"
+                href="index.html"
+                aria-label="Ruth Chavac, inicio"
+            >
+                <img
+                    src="logo-ruth-chavac.jpg"
+                    alt="Logotipo de Ruth Chavac"
+                >
+
+                <span>
+                    <strong>Ruth Chavac</strong>
+                    <small>PSICOLOGÍA Y BIENESTAR</small>
+                </span>
+            </a>
+
+            <!-- Botón del menú móvil -->
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+            <!-- Navegación principal -->
+            <nav class="nav" id="mainNav">
+
+                <a href="index.html">Inicio</a>
+                <a href="sobre-mi.html">Sobre mí</a>
+
+                <a href="servicios.html" class="active">
+                    Mis servicios
+                </a>
+
+                <a href="agendar.html">Agendar cita</a>
+                <a href="ubicacion.html">Ubicación</a>
+                <a href="contacto.html">Contacto</a>
+
+                <a class="btn btn-small" href="agendar.html">
+                    Solicitar cita
+                    <span>↗</span>
+                </a>
+
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <!-- Presentación de los servicios -->
+        <section class="page-hero">
+            <div class="container">
+
+                <p class="eyebrow">
+                    <span class="eyebrow-line"></span>
+                    MIS SERVICIOS
+                </p>
+
+                <h1>
+                    Un espacio para cada
+                    <em>etapa de tu proceso.</em>
+                </h1>
+
+                <p>
+                    Opciones de acompañamiento para explorar tus necesidades
+                    y objetivos de bienestar.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- Listado de servicios -->
+        <section class="section services-section">
+            <div class="container">
+
+                <div class="services-grid">
+
+                    <!-- Servicio 1 -->
+                    <article class="service-card">
+
+                        <div class="service-icon">♡</div>
+
+                        <span class="service-number">
+                            01 / INDIVIDUAL
+                        </span>
+
+                        <h3>Atención psicológica individual</h3>
+
+                        <p>
+                            Espacio personal para explorar pensamientos,
+                            emociones, dificultades y objetivos.
+                        </p>
+
+                        <a
+                            href="agendar.html"
+                            class="service-link"
+                            data-service="Atención psicológica individual"
+                        >
+                            Solicitar información
+                            <span>↗</span>
+                        </a>
+
+                    </article>
+
+                    <!-- Servicio 2 -->
+                    <article class="service-card featured">
+
+                        <div class="service-icon">☼</div>
+
+                        <span class="service-number">
+                            02 / EMOCIONAL
+                        </span>
+
+                        <h3>Gestión emocional</h3>
+
+                        <p>
+                            Explora herramientas saludables para afrontar
+                            el estrés, los cambios y las emociones.
+                        </p>
+
+                        <a
+                            href="agendar.html"
+                            class="service-link"
+                            data-service="Gestión emocional"
+                        >
+                            Solicitar información
+                            <span>↗</span>
+                        </a>
+
+                    </article>
+
+                    <!-- Servicio 3 -->
+                    <article class="service-card">
+
+                        <div class="service-icon">❋</div>
+
+                        <span class="service-number">
+                            03 / PERSONAL
+                        </span>
+
+                        <h3>Autoconocimiento y autoestima</h3>
+
+                        <p>
+                            Reconoce fortalezas, necesidades y límites
+                            para construir una relación más amable contigo.
+                        </p>
+
+                        <a
+                            href="agendar.html"
+                            class="service-link"
+                            data-service="Autoconocimiento y autoestima"
+                        >
+                            Solicitar información
+                            <span>↗</span>
+                        </a>
+
+                    </article>
+
+                    <!-- Servicio 4 -->
+                    <article class="service-card">
+
+                        <div class="service-icon">◷</div>
+
+                        <span class="service-number">
+                            04 / ORIENTACIÓN
+                        </span>
+
+                        <h3>Orientación psicológica</h3>
+
+                        <p>
+                            Ordena inquietudes y considera posibles pasos
+                            ante una situación concreta.
+                        </p>
+
+                        <a
+                            href="agendar.html"
+                            class="service-link"
+                            data-service="Orientación psicológica"
+                        >
+                            Solicitar información
+                            <span>↗</span>
+                        </a>
+
+                    </article>
+
+                </div>
+
+                <!-- Botón para agendar una cita -->
+                <div class="center-action">
+
+                    <a class="btn" href="agendar.html">
+                        Agendar una cita
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+
+        <div class="container footer-main">
+
+            <!-- Logotipo del pie de página -->
+            <a class="brand footer-brand" href="index.html">
+
+                <img
+                    src="logo-ruth-chavac.jpg"
+                    alt=""
+                >
+
+                <span>
+                    <strong>Ruth Chavac</strong>
+                    <small>PSICOLOGÍA Y BIENESTAR</small>
+                </span>
+
+            </a>
+
+            <p>
+                Un espacio de escucha, cuidado y crecimiento personal.
+            </p>
+
+            <!-- Enlaces del pie de página -->
+            <div class="footer-links">
+                <a href="servicios.html">Servicios</a>
+                <a href="agendar.html">Agendar cita</a>
+                <a href="ubicacion.html">Ubicación</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+
+        </div>
+
+        <!-- Derechos reservados y aviso -->
+        <div class="container footer-bottom">
+
+            <span>
+                © <span id="year"></span>
+                Ruth Chavac. Todos los derechos reservados.
+            </span>
+
+            <span>
+                La información es orientativa y no sustituye atención
+                de emergencia.
+            </span>
+
+        </div>
+
+    </footer>
+
+    <!-- Botón para volver al inicio -->
+    <button
+        id="backToTop"
+        class="back-to-top"
+        aria-label="Volver arriba"
+    >
+        ↑
+    </button>
+
+</body>
+</html>

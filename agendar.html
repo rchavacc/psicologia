@@ -1,0 +1,461 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Solicita una cita con Ruth Chavac, Psicología y Bienestar."
+    >
+
+    <title>Agendar cita | Ruth Chavac</title>
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Hoja de estilos y JavaScript -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ==================== BARRA SUPERIOR ==================== -->
+    <div class="topbar">
+        <div class="container topbar-inner">
+
+            <span>
+                Un espacio para ti, tu bienestar y tu crecimiento
+            </span>
+
+            <a href="contacto.html">
+                Solicitar información
+                <span aria-hidden="true">↗</span>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- ==================== ENCABEZADO Y MENÚ ==================== -->
+    <header class="header">
+
+        <div class="container nav-wrap">
+
+            <!-- Logotipo y nombre -->
+            <a
+                class="brand"
+                href="index.html"
+                aria-label="Ruth Chavac, inicio"
+            >
+                <img
+                    src="logo-ruth-chavac.jpg"
+                    alt="Logotipo de Ruth Chavac"
+                >
+
+                <span>
+                    <strong>Ruth Chavac</strong>
+                    <small>PSICOLOGÍA Y BIENESTAR</small>
+                </span>
+            </a>
+
+            <!-- Botón del menú móvil -->
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+            <!-- Navegación principal -->
+            <nav class="nav" id="mainNav">
+
+                <a href="index.html">Inicio</a>
+
+                <a href="sobre-mi.html">Sobre mí</a>
+
+                <a href="servicios.html">Mis servicios</a>
+
+                <a href="agendar.html" class="active">
+                    Agendar cita
+                </a>
+
+                <a href="ubicacion.html">Ubicación</a>
+
+                <a href="contacto.html">Contacto</a>
+
+                <a class="btn btn-small" href="agendar.html">
+                    Solicitar cita <span>↗</span>
+                </a>
+
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- ==================== CONTENIDO PRINCIPAL ==================== -->
+    <main>
+
+        <!-- Título de la página -->
+        <section class="page-hero">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    <span class="eyebrow-line"></span>
+                    AGENDA TU CITA
+                </p>
+
+                <h1>
+                    Reserva un momento para
+                    <em>cuidar de ti.</em>
+                </h1>
+
+                <p>
+                    Indica tus preferencias y revisaremos la solicitud
+                    para confirmar disponibilidad.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- ==================== SECCIÓN DE RESERVAS ==================== -->
+        <section class="section">
+
+            <div class="container booking-grid">
+
+                <!-- Información sobre la cita -->
+                <div class="booking-copy">
+
+                    <p class="eyebrow">
+                        <span class="eyebrow-line"></span>
+                        PRIMER CONTACTO
+                    </p>
+
+                    <h2>
+                        Tu bienestar merece
+                        <br>
+                        <em>un espacio en tu agenda.</em>
+                    </h2>
+
+                    <p>
+                        Completa el formulario con tus datos y el horario
+                        que prefieres. La solicitud no queda confirmada
+                        hasta que la clínica se comunique contigo.
+                    </p>
+
+                    <!-- Beneficio 1 -->
+                    <div class="booking-perk">
+
+                        <span>✓</span>
+
+                        <div>
+                            <strong>Atención personalizada</strong>
+
+                            <small>
+                                Revisaremos tu solicitud de forma individual.
+                            </small>
+                        </div>
+
+                    </div>
+
+                    <!-- Beneficio 2 -->
+                    <div class="booking-perk">
+
+                        <span>✓</span>
+
+                        <div>
+                            <strong>Cuida tu privacidad</strong>
+
+                            <small>
+                                No incluyas información íntima ni detalles
+                                clínicos en este formulario.
+                            </small>
+                        </div>
+
+                    </div>
+
+                    <!-- Aviso -->
+                  
+                </div>
+
+                <!-- ==================== FORMULARIO ==================== -->
+                <form class="booking-form" id="bookingForm">
+
+                    <!-- Encabezado del formulario -->
+                    <div class="form-heading">
+
+                        <div>
+                            <span class="form-overline">
+                                PRIMER CONTACTO
+                            </span>
+
+                            <h3>Solicitar una cita</h3>
+                        </div>
+
+                        <span class="form-flower">✳</span>
+
+                    </div>
+
+                    <!-- Nombre y teléfono -->
+                    <div class="form-row">
+
+                        <label>
+                            Nombre completo
+
+                            <input
+                                type="text"
+                                name="nombre"
+                                placeholder="¿Cómo te llamas?"
+                                autocomplete="name"
+                                minlength="2"
+                                required
+                            >
+                        </label>
+
+                        <label>
+                            Teléfono de contacto
+
+                            <input
+                                type="tel"
+                                name="telefono"
+                                placeholder="Tu número de teléfono"
+                                autocomplete="tel"
+                                minlength="8"
+                                required
+                            >
+                        </label>
+
+                    </div>
+
+                    <!-- Correo electrónico -->
+                    <label>
+                        Correo electrónico
+                        <span class="optional">(opcional)</span>
+
+                        <input
+                            type="email"
+                            name="correo"
+                            placeholder="tunombre@correo.com"
+                            autocomplete="email"
+                        >
+                    </label>
+
+                    <!-- Servicio -->
+                    <label>
+                        Servicio de interés
+
+                        <select name="servicio" id="servicio" required>
+
+                            <option value="">
+                                Selecciona un servicio
+                            </option>
+
+                            <option>
+                                Atención psicológica individual
+                            </option>
+
+                            <option>
+                                Gestión emocional
+                            </option>
+
+                            <option>
+                                Autoconocimiento y autoestima
+                            </option>
+
+                            <option>
+                                Orientación psicológica
+                            </option>
+
+                            <option>
+                                Quisiera recibir información sobre los servicios
+                            </option>
+
+                        </select>
+                    </label>
+
+                    <!-- Fecha y horario -->
+                    <div class="form-row">
+
+                        <label>
+                            Fecha preferida
+
+                            <input
+                                type="date"
+                                name="fecha"
+                                id="fecha"
+                                required
+                            >
+                        </label>
+
+                        <label>
+                            Horario preferido
+
+                            <select name="horario" required>
+
+                                <option value="">
+                                    Selecciona
+                                </option>
+
+                                <option>
+                                    Mañana (8:00 a. m. – 12:00 p. m.)
+                                </option>
+
+                                <option>
+                                    Tarde (1:00 p. m. – 5:00 p. m.)
+                                </option>
+
+                                <option>
+                                    Flexible / por confirmar
+                                </option>
+
+                            </select>
+                        </label>
+
+                    </div>
+
+                    <!-- Modalidad de atención -->
+                    <label>
+                        Modalidad preferida
+
+                        <select name="modalidad" required>
+
+                            <option value="">
+                                Selecciona una modalidad
+                            </option>
+
+                            <option>Presencial</option>
+
+                            <option>En línea</option>
+
+                            <option>
+                                Me gustaría recibir información
+                            </option>
+
+                        </select>
+                    </label>
+
+                    <!-- Consentimiento -->
+                    <label class="consent">
+
+                        <input
+                            type="checkbox"
+                            name="consentimiento"
+                            required
+                        >
+
+                        <span>
+                            Autorizo que me contacten para dar seguimiento
+                            a esta solicitud. No incluyo información
+                            clínica sensible.
+                        </span>
+
+                    </label>
+
+                    <!-- Botón de envío -->
+                    <button
+                        class="btn submit-btn"
+                        type="submit"
+                    >
+                        Preparar solicitud <span>↗</span>
+                    </button>
+
+                    <!-- Aviso de privacidad -->
+                    <p class="form-privacy">
+                        La solicitud se guarda únicamente en este navegador.
+                        No se envía a la clínica ni confirma una cita.
+                    </p>
+
+                    <!-- Mensajes de JavaScript -->
+                    <div
+                        class="form-message"
+                        id="formMessage"
+                        role="status"
+                        aria-live="polite"
+                    ></div>
+
+                </form>
+                <!-- ==================== FIN DEL FORMULARIO ==================== -->
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== PIE DE PÁGINA ==================== -->
+    <footer class="footer">
+
+        <div class="container footer-main">
+
+            <!-- Marca -->
+            <a class="brand footer-brand" href="index.html">
+
+                <img
+                    src="logo-ruth-chavac.jpg"
+                    alt="Logotipo de Ruth Chavac"
+                >
+
+                <span>
+                    <strong>Ruth Chavac</strong>
+                    <small>PSICOLOGÍA Y BIENESTAR</small>
+                </span>
+
+            </a>
+
+            <p>
+                Un espacio de escucha, cuidado y crecimiento personal.
+            </p>
+
+            <!-- Enlaces del pie de página -->
+            <div class="footer-links">
+
+                <a href="servicios.html">Servicios</a>
+
+                <a href="agendar.html">Agendar cita</a>
+
+                <a href="ubicacion.html">Ubicación</a>
+
+                <a href="contacto.html">Contacto</a>
+
+            </div>
+
+        </div>
+
+        <!-- Derechos reservados -->
+        <div class="container footer-bottom">
+
+            <span>
+                © <span id="year"></span>
+                Ruth Chavac. Todos los derechos reservados.
+            </span>
+
+            <span>
+                La información es orientativa y no sustituye
+                atención de emergencia.
+            </span>
+
+        </div>
+
+    </footer>
+
+    <!-- ==================== BOTÓN VOLVER ARRIBA ==================== -->
+    <button
+        id="backToTop"
+        class="back-to-top"
+        aria-label="Volver arriba"
+    >
+        ↑
+    </button>
+
+</body>
+</html>
